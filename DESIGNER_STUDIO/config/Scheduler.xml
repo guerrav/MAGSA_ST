@@ -1,0 +1,8 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+  </langs>
+  <MLTexts/>
+ </multiLangs>
+</scheduledActions>

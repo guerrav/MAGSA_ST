@@ -1,0 +1,137 @@
+<wgtPage projectType="Designer Studio Project">
+ <object pageName="AddUser" pageSize="640,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="images\AddUser.png" id="AddUser" staticOptEnable="true">
+  <wgtStyle width="640" x="0" y="0" height="480" ver="1900018" color="rgb(235,235,235)"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="102" x="361" y="400" cx="48.00" cy="19.00" height="40"/>
+   <object class="ImageWgt" id="image8" static="true">
+    <wgtStyle width="102" imagePath="images/frm_ro2_chrm1.svg" enableCache="false" x="0" y="0" cx="46.00" cy="18.00" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle width="96" x="3.2" y="3.53333" fill="rgb(0,153,255)" dx="1" cx="46.98" form="standard" dy="-1" cy="15.00" height="33" releasePath="images/BU_ro2_gl1_xxx_1.svg" needlePath="images/BU_ro2_gl1_xxx_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="ApplyEditAction" attribute="onMouseRelease" actionName="ApplyEdit" event="onMouseUp" applyType="1" actionID="0" actionWgt="_UserMgr"/>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" actionName="LastVisitedPage" event="onMouseUp" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle width="50" x="27.4565" forcePaint="1" y="8" font-family="Arial" fill="rgb(40,40,40)" cx="24.00" cy="10.00" height="22" alignment="center" vert-align="middle" text="Add" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="102" x="473" y="400" cx="48.00" cy="19.00" height="40"/>
+   <object class="ImageWgt" id="image4" static="true">
+    <wgtStyle width="102" imagePath="images/frm_ro2_chrm1.svg" enableCache="false" x="0" y="0" cx="46.00" cy="18.00" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd4">
+    <wgtStyle width="96" x="3.05556" y="3.66667" fill="rgb(0,153,255)" dx="1" cx="47.25" form="standard" dy="-1" cy="15.30" height="33" releasePath="images/BU_ro2_gl1_xxx_1.svg" needlePath="images/BU_ro2_gl1_xxx_2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="LastVisitedPageAction" attribute="onMouseRelease" actionName="LastVisitedPage" event="onMouseUp" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label14">
+    <wgtStyle width="50" x="28" forcePaint="1" y="8.36957" font-family="Arial" fill="rgb(40,40,40)" cx="24.00" cy="9.26" height="22" alignment="center" vert-align="middle" text="Cancel" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="28" x="474" y="341" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="13.00" cy="9.00" height="19" alignment="left" vert-align="top" text="min" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="error_msg">
+   <wgtStyle width="291" x="59" forcePaint="16" y="404" font-family="Arial" fill="rgb(255,0,0)" wrapping="true" cx="143.41" cy="32.42" wgtStaticOpt="dynamic" height="69" alignment="left" vert-align="top" text="" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="EditBoxWgt" id="logoff_edit">
+   <wgtStyle width="72" x="396" forcePaint="8" y="337" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="12.00" cy="17.63" height="28" alignment="left" vert-align="middle" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUserlogoff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="changelogoff_cmb">
+   <wgtStyle width="72" x="396" forcePaint="8" y="300" font-family="Arial" font-bold="true" cx="10.00" cy="14.00" height="28" alignment="left" vert-align="top" index="0" text="" keypad-type="None" list="false,true" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserchangelogoff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="changepassword_cmb">
+   <wgtStyle width="72" x="396" forcePaint="8" y="265" font-family="Arial" font-bold="true" cx="10.00" cy="14.00" height="28" alignment="left" vert-align="top" index="0" text="" keypad-type="None" list="false,true" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserchangepwd" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="mustcntspch_cmb">
+   <wgtStyle width="72" x="396" forcePaint="8" y="230" font-family="Arial" font-bold="true" cx="10.00" cy="14.00" height="28" alignment="left" vert-align="top" index="0" text="" keypad-type="None" list="false,true" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserpwd-spch" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="mustcntnumber_cmb">
+   <wgtStyle width="72" x="396" forcePaint="8" y="195" font-family="Arial" font-bold="true" cx="10.00" cy="14.00" height="28" alignment="left" vert-align="top" index="0" text="" keypad-type="None" list="false,true" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserpwd-number" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="EditBoxWgt" id="comment_edit">
+   <wgtStyle width="342" x="233" forcePaint="8" y="138" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="55.00" cy="13.12" height="28" alignment="left" vert-align="top" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUsercomment" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ComboBoxWgt" id="group_cmb">
+   <wgtStyle width="130" x="233" forcePaint="8" y="100" font-family="Arial" font-bold="true" cx="15.00" cy="12.00" height="28" alignment="left" vert-align="top" index="0" text="" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="list" tag="groupNameList" widgetType="Project" sourceType="Data" dataSource="_UserGroupMgr"/>
+    <dataLink readWrite="R/W" attribute="index" tag="editUserGroup" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="EditBoxWgt" id="password_edit">
+   <wgtStyle width="131" x="233" forcePaint="8" y="63" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="23.00" cy="18.00" height="28" alignment="left" vert-align="middle" editType="2" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUserPwd" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="EditBoxWgt" id="username_edit">
+   <wgtStyle width="131" x="233" forcePaint="8" y="26" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="23.00" cy="18.00" height="28" alignment="left" vert-align="middle" text="" keypad-type="Alphabet" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="text" tag="editUserName" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label10" static="true">
+   <wgtStyle width="71" x="60" y="145" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="35.00" cy="10.00" height="16" alignment="left" vert-align="top" text="Comments:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="72" x="60" y="32" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="34.00" cy="9.00" height="16" alignment="left" vert-align="top" text="User name:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="65" x="60" y="69" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="42.00" cy="9.00" height="16" alignment="left" vert-align="top" text="Password:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label13" static="true">
+   <wgtStyle width="43" x="60" y="106" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="25.00" cy="10.00" height="16" alignment="left" vert-align="top" text="Group:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label9" static="true">
+   <wgtStyle width="133" x="60" y="342.5" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="67.00" cy="9.00" height="16" alignment="left" vert-align="top" text="Inactivity logoff time:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label6" static="true">
+   <wgtStyle width="120" x="60" y="306" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" wrapping="true" cx="61.00" cy="8.00" height="16" alignment="left" vert-align="top" text="Enable logoff time:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="203" x="60" y="201" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" wrapping="true" cx="99.00" cy="7.00" height="16" alignment="left" vert-align="top" text="Password must contain number:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="263" x="60" y="236" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" wrapping="true" cx="127.00" cy="9.00" height="16" alignment="left" vert-align="top" text="Password must contain special character:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="243" x="60" y="271" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" wrapping="true" cx="120.00" cy="9.00" height="16" alignment="left" vert-align="top" text="User must change his initial password:" keypad-type="None" font-size="10"/>
+  </object>
+  <object class="LineWgt" id="line" static="true">
+   <wgtStyle width="475.001" x="1" y="189.005" cx="0.00" cy="0.68" height="1.665" mtx="1.3474,-0.0014,0.0019,1.0000,0.0000,0.0000"/>
+  </object>
+  <object class="LineWgt" id="line1" static="true">
+   <wgtStyle width="475.001" x="0.33" y="384.335" cx="0.00" cy="0.68" height="1.665" mtx="1.3474,-0.0014,0.0019,1.0000,0.0000,0.0000"/>
+  </object>
+ </object>
+</wgtPage>

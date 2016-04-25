@@ -1,0 +1,18 @@
+<reports>
+ <report_print_default active="1" type="None" name="default" useDefault="0">
+  <roll-paper-chars>60</roll-paper-chars>
+  <unit>1</unit>
+  <isCustom>false</isCustom>
+  <port>0</port>
+  <printer>0</printer>
+  <paper>0</paper>
+  <paperW>8268</paperW>
+  <paperH>11693</paperH>
+  <colorMode>0</colorMode>
+  <isPortrait>1</isPortrait>
+  <marginTop>0</marginTop>
+  <marginLeft>0</marginLeft>
+  <marginBottom>0</marginBottom>
+  <marginRight>0</marginRight>
+ </report_print_default>
+</reports>

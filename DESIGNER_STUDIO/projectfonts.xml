@@ -1,0 +1,9 @@
+<projectfonts>
+ <projectfont fontname="Tahoma" filename="tahoma.ttf"/>
+ <projectfont fontname="InputSansCompressed Light" filename="InputSansCompressed-Light.ttf"/>
+ <projectfont fontname="InputMono Black" filename="InputMono-Black_0.ttf"/>
+ <projectfont fontname="InputSansCompressed Medium" filename="InputSansCompressed-Medium.ttf"/>
+ <projectfont fontname="InputSansCompressed" filename="InputSansCompressed-Regular.ttf"/>
+ <projectfont fontname="InputMono Medium" filename="InputMono-Medium_0.ttf"/>
+ <projectfont fontname="InputSansCompressed Black" filename="InputSansCompressed-Black.ttf"/>
+</projectfonts>

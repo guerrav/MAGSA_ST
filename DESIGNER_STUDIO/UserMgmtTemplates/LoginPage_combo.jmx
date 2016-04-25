@@ -1,0 +1,55 @@
+<wgtPage projectType="Designer Studio Project">
+ <object pageName="LoginPage_combo" pageSize="640,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" staticFile="images\LoginPage.png" id="LoginPage_combo" staticOptEnable="true">
+  <wgtStyle width="640" x="0" y="0" height="480" ver="1900018" color="rgb(235,235,235)"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang langId="L1" writingsystem="Any" name="Lang1" defaultFont="Tahoma"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="UserListWgt" id="UserListWgt1">
+   <wgtStyle width="32" x="0" y="0" cx="16" cy="16" height="33"/>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="88" x="184" y="148" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="42.00" cy="9.50" height="19" alignment="left" vert-align="top" text="User name:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="83" x="184" y="194" font-family="Arial" fill="rgb(40,40,40)" font-bold="true" cx="42.00" cy="9.00" height="19" alignment="left" vert-align="top" text="Password:" keypad-type="None" font-size="12"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="102" x="370" y="250" cx="48.00" cy="19.00" height="40"/>
+   <object class="ImageWgt" id="image8" static="true">
+    <wgtStyle width="102" imagePath="images/frm_ro2_chrm1.svg" enableCache="false" x="0" y="0" cx="46.00" cy="18.00" height="40"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="btnStd3">
+    <wgtStyle width="96" x="3.11765" y="4" fill="rgb(0,153,255)" dx="1" cx="47.15" form="standard" dy="-1" cy="15.00" height="33" releasePath="images/BU_ro2_gl1_xxx_1.svg" needlePath="images/BU_ro2_gl1_xxx_2.svg" type="momentary" value="0"/>
+    <links>
+     <action UserListDataSrcID="UserListWgt1" class="LogInSelectedUserAction" attribute="onMouseRelease" actionName="LogIn" event="onMouseUp" actionID="0" actionWgt="_UserMgr" LoginEditID="LogInEditWgt1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="label3">
+    <wgtStyle width="58" x="23.4756" forcePaint="1" y="8.78049" font-family="Arial" fill="rgb(40,40,40)" cx="27.84" cy="9.31" height="20.4756" alignment="center" vert-align="middle" text="Sign In" keypad-type="None" font-size="12"/>
+   </object>
+  </object>
+  <object class="LogInEditWgt" id="LogInEditWgt1">
+   <wgtStyle width="170" x="302" y="140" height="83"/>
+   <object class="EditBoxWgt" id="password_edit">
+    <wgtStyle width="170" x="0" forcePaint="8" y="49" font-family="Arial" fill="rgb(40,40,40)" cx="23.00" cy="18.00" height="34" alignment="left" vert-align="middle" editType="2" text="" keypad-type="Alphabet" font-size="14"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="text" tag="password" sourceType="Widget" dataSource="LogInEditWgt1"/>
+    </dataLinks>
+   </object>
+   <object class="ComboBoxWgt" id="username_edit">
+    <wgtStyle width="170" x="0" forcePaint="8" y="0" font-family="Arial" fill="rgb(40,40,40)" cx="23.00" cy="18.00" height="34" alignment="left" vert-align="middle" index="0" text="" keypad-type="None" font-size="14"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="list" tag="editUserList" sourceType="Data" dataSource="UserListWgt1"/>
+     <dataLink readWrite="R/W" attribute="index" tag="loginUserName" sourceType="Data" dataSource="UserListWgt1"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="LabelWgt" id="error_msg">
+   <wgtStyle width="284" x="182" forcePaint="16" y="310" font-family="Arial" fill="rgb(255,0,0)" wrapping="true" cx="141.00" cy="47.19" wgtStaticOpt="dynamic" height="97" alignment="left" vert-align="top" text="" keypad-type="None" font-size="12"/>
+  </object>
+ </object>
+</wgtPage>

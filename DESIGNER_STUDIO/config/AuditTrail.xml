@@ -1,0 +1,6 @@
+<audit_trail enable="false">
+ <misc>
+  <login auditBuff="AuditTrail" subT="1" eventT="18">true</login>
+  <logout auditBuff="AuditTrail" subT="1" eventT="18">true</logout>
+ </misc>
+</audit_trail>

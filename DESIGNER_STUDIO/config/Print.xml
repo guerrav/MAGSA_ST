@@ -1,0 +1,28 @@
+<printdetails ramquota="16000000" maxpixmapsize="16000000" spoolMediaType="0" spoolFolder="" diskquota="16000000">
+ <printers>
+  <printer name="PDF">
+   <port>File</port>
+   <paper>A4</paper>
+   <paper>Custom</paper>
+   <color>Monochrome (B&amp;W)</color>
+   <color>3 Color CMY</color>
+  </printer>
+  <printer name="HP PCL">
+   <port>USB</port>
+   <paper>A4</paper>
+   <color>Monochrome (B&amp;W)</color>
+   <color>3 Color CMY</color>
+  </printer>
+  <printer name="Epson LX (9-pin)">
+   <port>USB</port>
+   <paper>A4</paper>
+   <color>Monochrome (B&amp;W)</color>
+  </printer>
+  <printer name="Epson ESC/P 2">
+   <port>USB</port>
+   <paper>A4</paper>
+   <color>Monochrome (B&amp;W)</color>
+   <color>3 Color CMY</color>
+  </printer>
+ </printers>
+</printdetails>
